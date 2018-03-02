@@ -15,4 +15,4 @@ CREATE DATABASE IF NOT EXISTS dbFlyway;
 
 java -jar -DstartDate=2017-01-01.00:00:00 -Dduration=daily -Dthreshold=500 target/access-log-parser-1.0.0-SNAPSHOT.jar
 
-java -jar -DstartDate=2017-01-01.00:00:00 -Dduration=hourly -Dthreshold=200 -Daccesslog=/path/to/accesslog.file target/access-log-parser-1.0.0-SNAPSHOT.jar
+java -jar -DstartDate=2017-01-01.00:00:00 -Dduration=hourly -Dthreshold=200 -Daccesslog=file:/path/to/accesslog.file target/access-log-parser-1.0.0-SNAPSHOT.jar
